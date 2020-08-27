@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  src: local('SFProDisplay'), url(./fonts/SFProDisplay-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'SFProDisplay';
+  background-color: #1f1e1d;
+  color: #ffffff;
+}

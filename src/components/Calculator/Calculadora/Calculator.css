@@ -1,0 +1,27 @@
+.calculadora {
+    display: flex;
+    justify-content: center;
+    background-image: url('../../../assets/images/iphone7-min.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.Iphone7 {    
+    min-width: 289px;
+    min-height: 553px;
+}
+
+.tela {
+    background-color: #100c08;
+    margin-top: 73.5px;
+    margin-left: 30.25px;
+    width: 231.25px;
+    height: 408px;
+    border-radius: 0.5%;
+
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 120px 57px 57px 57px 57px 57px;
+}

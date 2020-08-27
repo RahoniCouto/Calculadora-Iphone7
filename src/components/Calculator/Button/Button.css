@@ -1,0 +1,40 @@
+.button {
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #31302d;
+    border: 1px solid #100c08;
+    border-radius: 50%;
+    margin: 4px;
+
+    outline: none;
+}
+
+.button:active {
+    background-color: #7d7d7d;
+}
+
+.button.duble {
+    grid-column: span 2;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.button.operation {
+    background-color: #ff9c4a;
+}
+
+.button.operation:active{
+    background-color: #f1f1f1;
+}
+
+.button.operation1 {
+    background-color: #c0c0c0;
+    color: #100c08;
+}
+
+.button.operation1:active{
+    background-color: #f2f2f2;
+}
