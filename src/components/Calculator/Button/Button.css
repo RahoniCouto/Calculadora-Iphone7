@@ -28,13 +28,14 @@
 
 .button.operation:active{
     background-color: #f1f1f1;
+    color: #ff9c4a;
 }
 
-.button.operation1 {
+.button.operationTop {
     background-color: #c0c0c0;
     color: #100c08;
 }
 
-.button.operation1:active{
+.button.operationTop:active{
     background-color: #f2f2f2;
 }
