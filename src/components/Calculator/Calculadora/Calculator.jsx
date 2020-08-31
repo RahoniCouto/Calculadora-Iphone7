@@ -67,19 +67,20 @@ export default class Calculadora extends Component {
                 break;
                 case '%':
                     const percentResult = operation === '%'
-                
+                    const porcent = values[0] * (values[1] / 100)
                     switch(currentOperation){
                         case '+':
-                            values[0]=values[0]+(values[0] * (values[1] / values[0]));
+                            
+                            values[0]=values[0]+porcent;
                         break;
                         case '-':
-                            values[0]=values[0]-(values[0] * (values[1] / values[0]));
+                            values[0]=values[0]-porcent;
                         break;
                         case 'X':
-                            values[0]=values[0]*(values[0] * (values[1] / values[0]));
+                            values[0]=values[0]*porcent;
                         break;
                         case '/':
-                            values[0]=values[0]/(values[0] * (values[1] / values[0]));
+                            values[0]=values[0]/porcent;
                         break;
                         default:
                             values[0]=0
@@ -127,8 +128,8 @@ export default class Calculadora extends Component {
                 <div className='Iphone7'>
                     <div className="tela">
                         <Display value={this.state.displayValue} />
-                        <Button label="C" click={ this.clearMemory } operationTop />
-                        <Button label="+/-" click={ this.setOperation } operationTop />
+                        <Button label="C" click={ this.clearMemory } operationTop duble />
+                        {/* <Button label="+/-" click={ this.setOperation } operationTop /> */}
                         <Button label="%" click={ this.setOperation } operationTop />
                         <Button label="/" click={ this.setOperation } operation />
                         <Button label="7" click={ this.addDigit } />
